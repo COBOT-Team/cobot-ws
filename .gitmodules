@@ -1,0 +1,21 @@
+[submodule "src/ar3-hardware-interface"]
+	path = src/ar3-hardware-interface
+	url = git@github.com:COBOT-Team/ar3-hardware-interface.git
+[submodule "src/ar3-bringup"]
+	path = src/ar3-bringup
+	url = git@github.com:COBOT-Team/ar3-bringup.git
+[submodule "src/ar3-moveit-config"]
+	path = src/ar3-moveit-config
+	url = git@github.com:COBOT-Team/ar3-moveit-config.git
+[submodule "src/game-manager"]
+	path = src/game-manager
+	url = git@github.com:COBOT-Team/game-manager.git
+[submodule "src/chess-controller"]
+	path = src/chess-controller
+	url = git@github.com:COBOT-Team/chess-controller.git
+[submodule "src/chess-msgs"]
+	path = src/chess-msgs
+	url = git@github.com:COBOT-Team/chess-msgs.git
+[submodule "src/are-description"]
+	path = src/ar3-description
+	url = git@github.com:COBOT-Team/ar3-description.git
