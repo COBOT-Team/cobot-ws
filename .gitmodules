@@ -19,3 +19,6 @@
 [submodule "src/are-description"]
 	path = src/ar3-description
 	url = git@github.com:COBOT-Team/ar3-description.git
+[submodule "src/chessboard-transform"]
+	path = src/chessboard-transform
+	url = git@github.com:COBOT-Team/chessboard-transform.git
