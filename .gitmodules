@@ -25,3 +25,6 @@
 [submodule "src/kinect2ros"]
 	path = src/kinect2ros
 	url = git@github.com:COBOT-Team/kinect2ros.git
+[submodule "src/tof-piece-finder"]
+	path = src/tof-piece-finder
+	url = git@github.com:COBOT-Team/tof-piece-finder.git
