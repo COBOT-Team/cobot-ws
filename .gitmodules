@@ -28,3 +28,6 @@
 [submodule "src/tof-piece-finder"]
 	path = src/tof-piece-finder
 	url = git@github.com:COBOT-Team/tof-piece-finder.git
+[submodule "src/aruco-transforms"]
+	path = src/aruco-transforms
+	url = git@github.com:COBOT-Team/aruco-transforms.git
