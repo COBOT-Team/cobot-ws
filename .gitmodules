@@ -28,3 +28,6 @@
 [submodule "src/aruco-transforms"]
 	path = src/aruco-transforms
 	url = git@github.com:COBOT-Team/aruco-transforms.git
+[submodule "src/chess-player"]
+	path = src/chess-player
+	url = git@github.com:COBOT-Team/chess-player.git
