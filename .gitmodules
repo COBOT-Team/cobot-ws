@@ -31,3 +31,6 @@
 [submodule "src/chess-player"]
 	path = src/chess-player
 	url = git@github.com:COBOT-Team/chess-player.git
+[submodule "src/topic-tester"]
+	path = src/topic-tester
+	url = git@github.com:COBOT-Team/topic-tester.git
