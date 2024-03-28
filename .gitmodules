@@ -34,3 +34,6 @@
 [submodule "src/topic-tester"]
 	path = src/topic-tester
 	url = git@github.com:COBOT-Team/topic-tester.git
+[submodule "src/cobot-corrector"]
+	path = src/cobot-corrector
+	url = git@github.com:COBOT-Team/cobot-corrector.git
