@@ -1,39 +1,39 @@
 [submodule "src/ar3-hardware-interface"]
-	path = src/ar3-hardware-interface
+	path = src/configuration/ar3-hardware-interface
 	url = git@github.com:COBOT-Team/ar3-hardware-interface.git
 [submodule "src/ar3-bringup"]
-	path = src/ar3-bringup
+	path = src/configuration/ar3-bringup
 	url = git@github.com:COBOT-Team/ar3-bringup.git
 [submodule "src/ar3-moveit-config"]
-	path = src/ar3-moveit-config
+	path = src/configuration/ar3-moveit-config
 	url = git@github.com:COBOT-Team/ar3-moveit-config.git
 [submodule "src/game-manager"]
-	path = src/game-manager
+	path = src/chess/game-manager
 	url = git@github.com:COBOT-Team/game-manager.git
 [submodule "src/chess-controller"]
-	path = src/chess-controller
+	path = src/chess/chess-controller
 	url = git@github.com:COBOT-Team/chess-controller.git
 [submodule "src/chess-msgs"]
-	path = src/chess-msgs
+	path = src/configuration/chess-msgs
 	url = git@github.com:COBOT-Team/chess-msgs.git
 [submodule "src/are-description"]
-	path = src/ar3-description
+	path = src/configuration/ar3-description
 	url = git@github.com:COBOT-Team/ar3-description.git
 [submodule "src/kinect2ros"]
-	path = src/kinect2ros
+	path = src/sensors/kinect2ros
 	url = git@github.com:COBOT-Team/kinect2ros.git
 [submodule "src/tof-piece-finder"]
-	path = src/tof-piece-finder
+	path = src/sensors/tof-piece-finder
 	url = git@github.com:COBOT-Team/tof-piece-finder.git
 [submodule "src/aruco-transforms"]
-	path = src/aruco-transforms
+	path = src/sensors/aruco-transforms
 	url = git@github.com:COBOT-Team/aruco-transforms.git
 [submodule "src/chess-player"]
-	path = src/chess-player
+	path = src/motion/chess-player
 	url = git@github.com:COBOT-Team/chess-player.git
 [submodule "src/topic-tester"]
-	path = src/topic-tester
+	path = src/testing/topic-tester
 	url = git@github.com:COBOT-Team/topic-tester.git
 [submodule "src/cobot-corrector"]
-	path = src/cobot-corrector
+	path = src/motion/cobot-corrector
 	url = git@github.com:COBOT-Team/cobot-corrector.git
