@@ -53,7 +53,8 @@ def generate_launch_description():
 
     # RViz
     rviz_config_file = (
-        get_package_share_directory("moveit_servo") + "/config/demo_rviz_config.rviz"
+        get_package_share_directory(
+            "moveit_servo") + "/config/demo_rviz_config.rviz"
     )
     rviz_node = Node(
         package="rviz2",
@@ -77,7 +78,8 @@ def generate_launch_description():
         package="controller_manager",
         executable="ros2_control_node",
         parameters=[ros2_controllers_path],
-        remappings=[("/controller_manager/robot_description", "/robot_description")],
+        remappings=[
+            ("/controller_manager/robot_description", "/robot_description")],
         output="both",
     )
 
@@ -88,10 +90,10 @@ def generate_launch_description():
         name="servo_test_container",
         namespace="/",
         package="rclcpp_components",
-        executable="components_container_mt",
+        executable="component_container",
         composable_node_descriptions=[
             ComposableNode(
-                pacakge="robot_state_publisher",
+                package="robot_state_publisher",
                 plugin="robot_state_publisher:RobotStatePublisher",
                 name="robot_state_publisher",
                 parameters=[moveit_config.robot_description],
@@ -100,12 +102,8 @@ def generate_launch_description():
                 package="tf2_ros",
                 plugin="tf2_ros::StaticTransformBroadcasterNode",
                 name="static_tf2_broadcaster",
-                parameters=[{"child_frame_id": "/base_link", "frame_id": "/world"}],
-            ),
-            ComposableNode(
-                package="moveit_servo",
-                plugin="moveit_servo::JoyToServoPub",
-                name="controller_to_servo_node",
+                parameters=[
+                    {"child_frame_id": "/base_link", "frame_id": "/world"}],
             ),
             ComposableNode(
                 package="joy",
@@ -114,6 +112,29 @@ def generate_launch_description():
             ),
         ],
         output="screen",
+    )
+
+    # Joystick twist pub
+    twist_joy_node = Node(
+        package='teleop_twist_joy', executable='teleop_node',
+        name='teleop_twist_joy_node', parameters=[{
+            'joy_config': 'xbox',
+        }],
+    )
+
+    # Twist stamper
+    twist_stamper_node = Node(
+        package='twist_stamper',
+        executable='twist_stamper',
+        remappings=[
+            ('cmd_vel_in', 'cmd_vel'),
+            ('cmd_vel_out', '/cobot0/servo/delta_twist_cmds')
+        ],
+        parameters=[
+            {
+                'frame_id': 'cobot0_link_5'
+            }
+        ]
     )
 
     # Servo
@@ -130,5 +151,6 @@ def generate_launch_description():
     )
 
     return LaunchDescription(
-        [rviz_node, ros2_control_node, spawn_controllers_node, servo_node, container]
+        [rviz_node, ros2_control_node, spawn_controllers_node,
+            servo_node, twist_joy_node, container, twist_stamper_node]
     )

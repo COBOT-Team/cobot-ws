@@ -7,6 +7,8 @@
   <maintainer email="zchampion2020@my.fit.edu">Zach Champion</maintainer>
   <license>TODO: License declaration</license>
 
+  <depend>twist_stamper</depend>
+
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <exec_depend>ar3_moveit_config</exec_depend>

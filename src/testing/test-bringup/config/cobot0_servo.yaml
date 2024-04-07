@@ -36,7 +36,7 @@ smoothing_filter_plugin_name: "online_signal_smoothing::ButterworthFilterPlugin"
 # which other nodes can use as a source for information about the planning environment.
 # NOTE: If a different node in your system is responsible for the "primary" planning scene instance (e.g. the MoveGroup node),
 # then is_primary_planning_scene_monitor needs to be set to false.
-is_primary_planning_scene_monitor: false
+is_primary_planning_scene_monitor: true
 
 ## MoveIt properties
 move_group_name:  cobot0  # Often 'manipulator' or 'arm'
