@@ -37,3 +37,7 @@
 [submodule "src/cobot-corrector"]
 	path = src/motion/cobot-corrector
 	url = git@github.com:COBOT-Team/cobot-corrector.git
+[submodule "src/testing/teleop-twist-joy-rolling"]
+	path = src/testing/teleop-twist-joy-rolling
+	url = git@github.com:ros2/teleop_twist_joy.git
+	branch = rolling
