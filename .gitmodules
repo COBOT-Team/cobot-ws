@@ -37,3 +37,6 @@
 [submodule "src/cobot-corrector"]
 	path = src/motion/cobot-corrector
 	url = git@github.com:COBOT-Team/cobot-corrector.git
+[submodule "src/chess/piece_identifier"]
+	path = src/chess/piece-identifier
+	url = git@github.com:ZachDaChampion/piece-identifier.git
