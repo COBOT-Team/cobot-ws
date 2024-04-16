@@ -40,3 +40,6 @@
 [submodule "src/chess/piece_identifier"]
 	path = src/chess/piece-identifier
 	url = git@github.com:ZachDaChampion/piece-identifier.git
+[submodule "src/sensors/clock-node"]
+	path = src/sensors/clock-node
+	url = git@github.com:COBOT-Team/clock-node.git
